@@ -6,16 +6,6 @@
     is_mac: "{{ ansible_distribution == 'MacOSX' }}"
 
   tasks:
-    - set_fact: is_wsl={{ not is_mac and lookup('file', '/proc/version') is regex('(M|m)icrosoft') }}
-
-    # Linux
-
-    - name: Install VLC (Linux)
-      become: yes
-      apt:
-        package: vlc
-      when: not is_mac and not is_wsl
-
     # macOS
 
     - name: Install VLC (macOS)

@@ -8,14 +8,6 @@
     is_mac: "{{ ansible_distribution == 'MacOSX' }}"
 
   tasks:
-    # Linux
-
-    - name: Install PowerShell Core (Linux)
-      command: dotnet tool install -g powershell
-      args:
-        creates: ~/.dotnet/tools/pwsh
-      when: not is_mac
-
     # macOS
 
     - name: Install PowerShell Core (macOS)

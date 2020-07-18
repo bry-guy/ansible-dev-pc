@@ -6,20 +6,6 @@
     is_mac: "{{ ansible_distribution == 'MacOSX' }}"
 
   tasks:
-    # Linux
-
-    - name: Install pre-requisites
-      become: yes
-      apt:
-        package: "{{ item }}"
-      loop:
-        - gcc
-        - libssl-dev
-        - libreadline-dev
-        - make
-        - zlib1g-dev
-      when: not is_mac
-
     # Common
 
     - name: Install rbenv
@@ -36,11 +22,3 @@
       file:
         path: ~/.rbenv/shims
         state: directory
-
-    - name: Enable rbenv in bash
-      blockinfile:
-        path: ~/.bashrc
-        marker: "### {mark} Ansible managed: Ruby"
-        block: |
-          export PATH="$HOME/.rbenv/bin:$PATH"
-          eval "$(rbenv init -)"

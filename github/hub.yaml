@@ -6,15 +6,6 @@
     is_mac: "{{ ansible_distribution == 'MacOSX' }}"
 
   tasks:
-    # Linux
-
-    - name: Install hub CLI (Linux)
-      become: yes
-      command: snap install --classic hub
-      args:
-        creates: /snap/bin/hub
-      when: not is_mac
-
     # macOS
 
     - name: Install hub CLI (macOS)

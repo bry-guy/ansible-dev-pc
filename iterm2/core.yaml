@@ -1,14 +1,13 @@
-- name: Slack
+- name: iTerm2
   hosts: 127.0.0.1
   connection: local
 
   vars:
     is_mac: "{{ ansible_distribution == 'MacOSX' }}"
 
-  tasks:
     # macOS
 
-    - name: Install Slack Desktop (macOS)
+    - name: Install iTerm2 (macOS)
       homebrew_cask:
-        name: slack
+        name: iterm2
       when: is_mac
