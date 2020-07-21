@@ -27,4 +27,4 @@
       file:
         path: ~/dev/go/pkg
         state: absent
-      when: go_download_linux.changed or go_download_mac.changed
+      when: go_download_mac.changed
