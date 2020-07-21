@@ -11,7 +11,7 @@
       ignore_errors: yes
 
     - name: Install NodeJS LTS
-      shell: nvm install lts/*
+      shell: nvm install --lts
       args:
           executable: /bin/zsh
       when: nvm_ls.failed
