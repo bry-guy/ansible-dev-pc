@@ -4,12 +4,12 @@
 
   tasks:
     - name: Test for installed NodeJS LTS
-      shell: zsh -ic "nvm ls lts/*" >/dev/null
+      shell: zsh -ic "nvm ls lts" >/dev/null
       register: nvm_ls
       ignore_errors: yes
 
     - name: Install NodeJS LTS
-      command: zsh -ic "nvm install lts/*"
+      command: zsh -ic "nvm install --lts"
       when: nvm_ls.failed
 
     - name: Use NodeJS LTS by default
