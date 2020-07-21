@@ -47,10 +47,12 @@ Most software does work on macOS, with a few exceptions noted below:
 # TODOs
 - [x] Try out and add HTTPie
 - [x] Replace keybinds.json and settings.json
-- [] Zsh as first-class citizen
+- [x] Zsh as first-class citizen
+- [] Add Karabiner-Elements
 - [] Include my macOS install notes into README
 - [] Firefox login to account
 - [] macOS desired preferences
+- [] Sync Karabiner-Elements file
 - [] Sync iterm2 profile
 - [] Sync .dotfiles (or get via git?)
 - [] Add cleanup to nvim/core.yaml so that it is idempotent
