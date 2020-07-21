@@ -85,6 +85,9 @@
 # Slack desktop application
 - import_playbook: slack/core.yaml
 
+# iTerm2
+- import_playbook: iterm2/core.yaml
+
 # Microsoft Teams
 - import_playbook: teams/core.yaml
 

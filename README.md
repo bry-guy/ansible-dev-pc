@@ -49,10 +49,15 @@ Most software does work on macOS, with a few exceptions noted below:
 - [x] Replace keybinds.json and settings.json
 - [x] Zsh as first-class citizen
 - [x] Add Karabiner-Elements
-- [] Sync Karabiner-Elements file
-- [] Sync iterm2 profile
-- [] Sync .dotfiles 
+- [x] Fix nodeJS install
+- [] Add vim-plug install
+- [] Add watson install
+- [x] Sync Karabiner-Elements file
+- [x] Sync iterm2 profile
+- [x] Sync .dotfiles 
+- [] Write automatic syncing of .dotfiles
 - [] Perform plugin install for neovim
+- [] Figure out syncing/linking of config/Code folder correctly
 - [] Include my macOS install notes into README
 - [] Firefox login to account
 - [] macOS desired preferences
