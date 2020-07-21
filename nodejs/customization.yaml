@@ -10,6 +10,7 @@
       ignore_errors: yes
 
     - name: Install NodeJS LTS
+      shell:
         cmd: nvm install lts/*
       when: nvm_ls.failed
 
