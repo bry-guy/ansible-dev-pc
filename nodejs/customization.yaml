@@ -4,7 +4,7 @@
 
   tasks:
     - name: Test for installed NodeJS LTS
-      shell: nvm ls lts/* > /dev/null
+      shell: nvm ls lts > /dev/null
       args:
           executable: /bin/zsh
       register: nvm_ls
