@@ -7,6 +7,8 @@
       file:
         path: ~/tmp/
         state: directory
+
+    - name: Clean tmp directory
       shell: /bin/rm -rf ~/tmp/*
 
     - name: Download nvim/nightly
