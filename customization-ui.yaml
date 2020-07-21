@@ -5,8 +5,10 @@
   tasks:
     # macOS
 
-    - name: Install Fonts (macOS)
+    - name: Add tap
       homebrew_tap:
         name: homebrew/cask-fonts
+
+    - name: Install Fonts
       homebrew_cask:
         name: font-hack-nerd-font
