@@ -7,6 +7,7 @@
       file:
         path: ~/tmp/
         state: directory
+      shell: /bin/rm -rf ~/tmp/*
 
     - name: Download nvim/nightly
       get_url:
