@@ -53,14 +53,7 @@ Most software does work on macOS, with a few exceptions noted below:
 - [] macOS desired preferences
 - [] Sync iterm2 profile
 - [] Sync .dotfiles (or get via git?)
-
-- Things to add:
-	- [x] nvim nightly
-	- [x] yabai/spacebar/skhd
-	- [x] vagrant
-	- [x] httpie
-
-- [x] Add kubernetes k-on magic stuff as install to ~/bin
+- [] Add cleanup to nvim/core.yaml so that it is idempotent
 
 - Clean up .zshrc
 	- [] dotnet install location - use new convention over old convention

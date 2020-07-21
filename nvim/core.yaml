@@ -23,4 +23,4 @@
     - name: Install nvim/nightly (macOS)
       shell: 
         chdir: ~/tmp/nvim-osx64/
-        cmd: mv bin/nvim /usr/local/bin/; mv lib/nvim/ /usr/local/lib/; mv /libs/* /usr/local/lib/; mv share/* /usr/local/share/
+        cmd: mv -n bin/nvim /usr/local/bin/; mv -n lib/nvim/ /usr/local/lib/; mv -n /libs/* /usr/local/lib/; mv -n share/* /usr/local/share/
