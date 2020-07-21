@@ -15,10 +15,12 @@
         mode: 0400
 
     - name: Extract nvim/nightly (macOS)
-      shell: 
-        cmd: tar xzvf ~/tmp/nvim-macos.tar.gz
+      unarchive:
+        src: "~/tmp/nvim-macos.tar.gz"
+        dest: "~/tmp"
+        creates: "~/tmp/nvim-osx64/"
 
     - name: Install nvim/nightly (macOS)
       shell: 
-        chdir: nvim-osx64/
+        chdir: ~/tmp/nvim-osx64/
         cmd: mv bin/nvim /usr/local/bin/; mv lib/nvim/ /usr/local/lib/; mv /libs/* /usr/local/lib/; mv share/* /usr/local/share/
