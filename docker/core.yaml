@@ -5,6 +5,7 @@
   vars:
     is_mac: "{{ ansible_distribution == 'MacOSX' }}"
 
+  tasks:
     # macOS
 
     - name: Install Docker CLI components (macOS)
