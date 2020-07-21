@@ -39,6 +39,9 @@
 # golang
 - import_playbook: golang/core.yaml
 
+# httpie
+- import_playbook: httpie/core.yaml
+
 # Kubernetes
 - import_playbook: kubectl/core.yaml
 
@@ -54,6 +57,9 @@
 # Nomad
 - import_playbook: nomad/core.yaml
 
+# Neovim
+- import_playbook: nvim/core.yaml
+
 # Postman
 - import_playbook: postman/core.yaml
 
@@ -65,6 +71,9 @@
 
 # Ruby
 - import_playbook: ruby/core.yaml
+
+# Window Managers
+- import_playbook: window-managers/core.yaml
 
 ##### Applications (free)
 

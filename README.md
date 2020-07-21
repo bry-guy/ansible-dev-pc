@@ -45,33 +45,27 @@ Most software does work on macOS, with a few exceptions noted below:
 * QEMU/KVM is replaced with VirtualBox (note that installing VirtualBox might fail the first time because of required permissions)
 
 # TODOs
-- Try out and add HTTPie
-- Zsh as first-class citizen
-- Include my macOS install notes into README
-- Replace keybinds.json and settings.json
+- [x] Try out and add HTTPie
+- [x] Replace keybinds.json and settings.json
+- [] Zsh as first-class citizen
+- [] Include my macOS install notes into README
+- [] Firefox login to account
+- [] macOS desired preferences
+- [] Sync iterm2 profile
+- [] Sync .dotfiles (or get via git?)
 
 - Things to add:
-	- nvim nightly
-	- yabai/spacebar/skhd
-	- vagrant
-	- httpie
+	- [x] nvim nightly
+	- [x] yabai/spacebar/skhd
+	- [x] vagrant
+	- [x] httpie
 
-- Add kubernetes k-on magic stuff as install to ~/bin
-
-- Sync files
-	- iterm2 profile
-	- .dotfiles (or get via git?)
-
-- Figure out how to configure/do:
-	- Firefox login to account
-	- macOS desired preferences
+- [x] Add kubernetes k-on magic stuff as install to ~/bin
 
 - Clean up .zshrc
-	- dotnet install location
-	- figure out openssl
-	- coreutils from brew?
-	- double check FZF_DEFAULT_COMMAND
-	- remove all linux references
+	- [] dotnet install location - use new convention over old convention
+	- [] figure out openssl
+	- [] remove all linux references
 
 - PR to Brad's repo
 	- Insync instead of Google Drive

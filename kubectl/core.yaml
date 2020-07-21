@@ -25,6 +25,11 @@
         name: kubectl
       when: is_mac
 
+    - name: Install kube-ps1 (macOS)
+      homebrew:
+        name: kube-ps1
+      when: is_mac
+
     # Common
 
     - name: Enable bash completion for kubectl

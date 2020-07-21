@@ -1,0 +1,16 @@
+- name: Window Managers
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    # macOS
+
+    - name: Install Yabai (macOS)
+      homebrew:
+        name: yabai
+    - name: Install SKHD (macOS)
+      homebrew:
+        name: skhd
+    - name: Install Spacebar (macOS)
+      homebrew:
+        name: spacebar
