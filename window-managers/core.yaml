@@ -5,15 +5,26 @@
   tasks:
     # macOS
 
+    - name: Add tap
+      homebrew_tap:
+        name: koekeishiya/formulae
+
+    - name: Add tap
+      homebrew_tap:
+        name: cmacrae/formulae
+
     - name: Install Yabai (macOS)
       homebrew:
         name: yabai
+
     - name: Install SKHD (macOS)
       homebrew:
         name: skhd
+
     - name: Install Spacebar (macOS)
       homebrew:
         name: spacebar
+
     - name: Install Karabiner-Elements (macOS)
       homebrew_cask:
         name: karabiner-elements
