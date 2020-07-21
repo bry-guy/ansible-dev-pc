@@ -4,7 +4,7 @@
 
   tasks:
     - name: Test for installed NodeJS LTS
-      shell: zsh -ic "nvm ls lts" >/dev/null
+      shell: zsh -ic "nvm ls 'lts/*'" >/dev/null
       register: nvm_ls
       ignore_errors: yes
 
