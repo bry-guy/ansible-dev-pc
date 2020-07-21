@@ -49,17 +49,22 @@ Most software does work on macOS, with a few exceptions noted below:
 - [x] Replace keybinds.json and settings.json
 - [x] Zsh as first-class citizen
 - [x] Add Karabiner-Elements
+- [] Sync Karabiner-Elements file
+- [] Sync iterm2 profile
+- [] Sync .dotfiles 
+- [] Perform plugin install for neovim
 - [] Include my macOS install notes into README
 - [] Firefox login to account
 - [] macOS desired preferences
-- [] Sync Karabiner-Elements file
-- [] Sync iterm2 profile
-- [] Sync .dotfiles (or get via git?)
+	- [] system preferences
+	- [] text preferences (aliasing settings)
+	- [] dock layout (apps/icons/order)
+- [] Create symlinks for sync'd files
 - [x] Add cleanup to nvim/core.yaml so that it is idempotent
 
 - Clean up .zshrc
-	- [] dotnet install location - use new convention over old convention
-	- [] figure out openssl
+	- [] dotnet install location; figure out if I want to use ~/bin vs /usr/local/bin or something
+	- [] figure out openssl (remove?)
 	- [] remove all linux references
 
 - PR to Brad's repo
