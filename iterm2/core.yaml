@@ -8,4 +8,3 @@
     - name: Install iTerm2 (macOS)
       homebrew_cask:
         name: iterm2
-      when: is_mac
