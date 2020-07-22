@@ -44,12 +44,86 @@ Most software does work on macOS, with a few exceptions noted below:
 * Insync is replaced with the native Google Backup and Sync
 * QEMU/KVM is replaced with VirtualBox (note that installing VirtualBox might fail the first time because of required permissions)
 
+### Preferences
+#### General
+- Sidebar icon size: Small
+- Automatically hide and show the menu bar
+- Default web browser: Firefox
+
+#### Dock
+- Size: 3.5/10
+- Magnification: Enabled, 5/10
+- Prefer tabs when opening documents: Always
+- Animate opening applications: Disabled
+- Show recent applications in Dock: Disabled
+
+#### Mission Control
+- Automatically rearrange Spaces: Disabled
+- Show Desktop: `-`
+
+#### Internet Accounts
+Calendars
+- Google: `bry-guy@github.com`
+- Google: `bryansmi@umich.edu`
+
+#### Touch ID
+- Add right index/middle, left index
+
+#### Security & Privacy
+General
+- Require password `1 hour`
+
+#### Sound
+- Alert volume: 10%
+
+#### Keyboard
+Keyboard
+- Key Repeat: Fast
+- Delay Until Repeat: Short
+- Touch Bar Shows: F1, F2
+- Press Fn key to: Show Control Strip
+
+Text
+- Add period with double-space: Disabled
+- Touch Bar typing suggestions: Disabled
+
+#### Touchpad
+Point & Click
+- Look up & data detectors: Disabled
+- Tap to click: Enabled
+- Click: Light
+- Tracking speed: 9/10
+
+Scroll & Zoom
+- Scroll direction: Natural: Disabled
+
+More Gestures
+- Swipe between pages: Disabled
+- Notifcation Center: Disabled
+- Launchpad: Disabled
+
+#### Mouse
+- Tracking speed: 4/10
+- Double-Click speed: 7/10
+- Scrolling speed: 7/10
+
+#### Energy Saver
+- Battery: 15min
+
+#### Sharing
+- Computer Name: Set it
+
+
+Shortcuts
+- Launchpad & Dock - Turn Dock Hiding On/Off: Disabled
+
 # TODOs
 - [x] Try out and add HTTPie
 - [x] Replace keybinds.json and settings.json
 - [x] Zsh as first-class citizen
 - [x] Add Karabiner-Elements
 - [x] Fix nodeJS install
+- [] Determine if I care about Logitech Gaming Software
 - [] Add vim-plug install
 - [] Add watson install
 - [x] Sync Karabiner-Elements file
@@ -64,13 +138,14 @@ Most software does work on macOS, with a few exceptions noted below:
 	- [] system preferences
 	- [] text preferences (aliasing settings)
 	- [] dock layout (apps/icons/order)
-- [] Create symlinks for sync'd files
+- [x] Create symlinks for sync'd files
 - [x] Add cleanup to nvim/core.yaml so that it is idempotent
 
 - Clean up .zshrc
 	- [] dotnet install location; figure out if I want to use ~/bin vs /usr/local/bin or something
+	- [] python/pyenv install location
 	- [] figure out openssl (remove?)
-	- [] remove all linux references
+	- [x] remove all linux references
 
 - PR to Brad's repo
 	- Insync instead of Google Drive
